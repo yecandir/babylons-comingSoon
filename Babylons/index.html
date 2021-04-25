@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babylons</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.3.0/dist/css/glide.core.min.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav__logo-container">
+        <img src="assets/images/babylons-logo-big.svg" alt="Babylons Logo" class="nav__logo">
+      </div>
+      <div class="nav-links">
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#partners">Partners</a>
+        <a class="nav__link" href="#why">Why Babylons?</a>
+        <a class="nav__link" href="#token">BABI Token</a>
+        <a class="nav__link" href="#roadmap">Roadmap</a>
+        <a class="nav__link" href="#team">Team</a>
+        <a class="nav__link" href="#faq">FAQ</a>
+        <a class="nav__link" href="">Litepaper</a>
+      </div>
+      <div class="nav__action-btn-container">
+        <a class="nav__action-btn" href="">Market Place</a>
+      </div>
+      <div class="mobile-bar" onClick="toggleMobileMenu();"> 
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <div class="hero" id="home">
+          <section>
+            <img class="hero__img" src="assets/images/nft-cards.png" alt="NFT Cards">
+            <div class="hero__text">
+              <div class="hero__video">
+                <img src="assets/icons/video-btn.svg" alt="Watch video">
+                <h2>Watch video</h2>
+              </div>
+              <h1 class="hero__title">Community Owned <br><span>Market Place on BSC</span></h1>
+              <div class="hero__quote">
+                <p>Babylons is the first community-owned NFT marketplace for creators, users and collectors.</p>
+                <p>Create, participate, collect and earn. Only on Babylons.</p>
+              </div>
+              <a class="hero__action-btn" href="">Go to Market Place</a>
+              <ul class="hero__socials">
+                <li><a href=""><img src="assets/icons/socials/twitter.svg" alt="Babylons Twitter"></a></li>
+                <li><a href=""><img src="assets/icons/socials/discord.svg" alt="Babylons Discord"></a></li>
+                <li><a href=""><img src="assets/icons/socials/telegram.svg" alt="Babylons Telegram"></a></li>
+                <li><a href=""><img src="assets/icons/socials/medium.svg" alt="Babylons Medium"></a></li>
+                <li><a href=""><img src="assets/icons/socials/instagram.svg" alt="Babylons Instagram"></a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <section class="partners" id="partners">
+          <h2 class="partners__title">Partners</h2>
+          <div class="partners__track">
+            <ul class="partners__list">
+              <li class="partners__partner">
+                <a><img src="assets/images/partners/ferrum.png" alt="ferrum network"></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <section class="why" id="why">
+          <h2 class="why__title"><span>Why</span> Babylons?</h2>
+          <p class="why__focus">Babylons is a next generation NFT marketplace with low-cost minting, weekly rewards, and a DAO
+            governance that puts the power in the hands of the community. Community meets NFTs. Only on Babylons.</p>
+          <p class="why__text">
+            A wide-spread community of creators and collectors already joined in. Contributers can enjoy lower costs at all
+            stages of their experience in babylons while getting rewards by our genuine incentive mechanism. Lack of liquidity
+            doesn’t exist in babylons due to our strong partnerships.
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="twelve columns">
+      <section class="features" id="features">
+        <div class="features__wrapper">
+          <h2 class="features__title">What can you do on <span>Babylons?</span></h2>
+          <ul class="features__list">
+            <li class="features__feature">
+              <img width="65" height="53" src="assets/icons/actions/create.svg" alt="create">
+              <h3>Create</h3>
+              <p>Create your own NFTs</p>
+            </li>
+            <li class="features__feature">
+              <img width="61" height="54" src="assets/icons/actions/higlighted.svg" alt="highlighted">
+              <h3>Highlighted</h3>
+              <p>Get your digital goods highlighted</p>
+            </li>
+            <li class="features__feature">
+              <img width="58" height="54" src="assets/icons/actions/buy-sell.svg" alt="buy/sell">
+              <h3>Buy / Sell</h3>
+              <p>Sell your own NFTs</p>
+              <p>Buy and collect NFTs</p>
+            </li>
+            <li class="features__feature">
+              <img width="61" height="54" src="assets/icons/actions/payback.svg" alt="payback">
+              <h3>Payback</h3>
+              <p>Get your commission payback simply by holding your $BABI tokens!</p>
+            </li>
+            <li class="features__feature">
+              <img width="54" height="54" src="assets/icons/actions/weekly-airdrops.svg" alt="wwekly airdrops">
+              <h3>Weekly Airdrops</h3>
+              <p>Be eligible to weekly rewards by utilizing our governance token $BABI</p>
+            </li>
+            <li class="features__feature">
+              <img width="48" height="54" src="assets/icons/actions/governance.svg" alt="governance">
+              <h3>Governance</h3>
+              <p>Adjust features, use voting system in future DAO</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <section class="wmub" id="wmub">
+        <h2 class="wmub__title">What makes <span>us better?</span></h2>
+        <div class="wmub__grid">
+          <ul>
+            <li></li>
+            <li>Chain Type</li>
+            <li>Minting Gas Fee</li>
+            <li>Transaction Commission</li>
+            <li>Transaction Reward</li>
+            <li>User Verification</li>
+          </ul>
+          <ul class="wmub__babylons">
+            <li><u>babylons.io</u><span class="wmub__tag">BEST</span></li>
+            <li>BSC</li>
+            <li>Average <b>$1</b></li>
+            <li><b>2%</b> from buyers <br> <b>2%</b> from sellers</li>
+            <li><b>331K BABI</b> <br> Every week</li>
+            <li>You <b>don't</b> have to verify</li>
+          </ul>
+          <ul>
+            <li><u>rarible.com</u></li>
+            <li>ETH</li>
+            <li>Average <b>$50</b></li>
+            <li><b>2.5%</b> from buyers <br> <b>2.5%</b> from sellers</li>
+            <li><b>56K RARI</b> <br> Every week</li>
+            <li>You <b>don't</b> have to verify</li>
+          </ul>
+          <ul>
+            <li><u>foundation.app</u></li>
+            <li>ETH</li>
+            <li><b>$60</b> for minting <br> <b>$60</b> for listing</li>
+            <li><b>15%</b> from sellers</li>
+            <li>-</li>
+            <li><b>Invitation</b> letter</li>
+          </ul>
+          <ul>
+            <li><u>superrare.co</u></li>
+            <li>ETH</li>
+            <li>Average <b>$50</b></li>
+            <li><b>3%</b> from buyers <br> <b>15%</b> from sellers</li>
+            <li>-</li>
+            <li><b>Invitation</b> letter</li>
+          </ul>
+        </div>
+        <p class="wmub__disclaimer">* We are using publicly available estimated data for comparision.</p>
+      </section>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <section class="reward">
+        <img class="reward__background-coin" src="assets/images/babi-3d-tokens.png">
+        <div class="reward__background-number">331,500</div>
+        <h2 class="reward__title"><span>Weekly reward</span> mechanism for active users</h2>
+        <p class="reward__description">Each week, 331,500 tokens are distributed to active users according to their share in
+          the weekly total volume. Both buyers and sellers are eligible. Weekly reward airdrops will be terminated after 250
+          weeks when all reserved tokens get distributed.</p>
+        <h3>Conditions</h3>
+        <div class="reward__conditions">
+          <div class="reward__condition">
+            <h4>First <span>3 months</span>*</h4>
+            <p>If weekly total volume exceeds
+              5,000 BNB, <span>331,500</span> tokens will
+              be distributed.</p>
+    
+            <p class="reward__condition-sm">Otherwise, a
+              certain number of reserved
+              tokens will be sent back to
+              weekly reward pool proportional
+              to missing volume.</p>
+          </div>
+          <div class="reward__condition">
+            <h4>First <span>3-6 months</span>*</h4>
+            <p>The limit will be updated to
+              15,000 BNB.</p>
+            <div class="reward__condition-limit">
+              <p>Limit</p>
+              <span class="reward__condition-amount">15,000 BNB</span>
+            </div>
+          </div>
+          <div class="reward__condition">
+            <h4>After first <span>3 months</span>*</h4>
+            <p>The limit will be updated to 25,000 BNB.</p>
+            <div class="reward__condition-limit">
+              <p>Limit</p>
+              <span class="reward__condition-amount">25,000 BNB</span>
+            </div>
+          </div>
+        </div>
+        <p class="reward__disclaimer">* Given values and ratios are subject to governance committee decisions. </p>
+      </section>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="twelve columns">
+      <section class="profit" id="profit">
+        <h2 class="profit__title"><span>Weekly profit</span> sharing structure</h2>
+        <p class="profit__description">Each week's income will be distributed to stakeholders (except locked tokens) as
+          following.</p>
+        <div class="profit__grid">
+          <div class="profit__cell">
+            <div class="profit__cell-text">
+              <h3>Token Stakers</h3>
+              <p>Token stakers <span>get 30% as rewards.</span></p>
+            </div>
+            <img src="assets/images/profits/token-stakers.png" alt="30%">
+          </div>
+          <div class="profit__cell">
+            <div class="profit__cell-text">
+              <h3>Operations</h3>
+              <p><span>25%</span> will go towards ongoing business and marketing operations</p>
+            </div>
+            <img src="assets/images/profits/team.png" alt="team">
+          </div>
+          <div class="profit__cell">
+            <div class="profit__cell-text">
+              <h3>Stored for buyback</h3>
+              <p><span>25% will be used for buyback</span> and buybacked tokens will be stored by founders.</p>
+              <p class="profit__subtext">Buybacked tokens will be stored at the address and will be locked by a smart
+                contract for a certain time.</p>
+            </div>
+            <img src="assets/images/profits/stored-by-babylons.png" alt="founders">
+          </div>
+          <div class="profit__cell">
+            <div class="profit__cell-text">
+              <h3>Burned</h3>
+              <p><span>20% will be used for buyback</span> and buybacked tokens will be burned.</p>
+              <p class="profit__subtext">Half of the burnable coins will be burned weekly. Remaining halves will be held and
+                burned all together in big burn events every 6 months</p>
+            </div>
+            <img src="assets/images/profits/burned.png" alt="burned">
+          </div>
+        </div>
+        <p class="profit__disclaimer">* Given values and ratios are subject to governance committee decisions.</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+      <section class="roadmap" id="roadmap">
+        <div class="roadmap__top">
+          <h2 class="roadmap__title">Roadmap</h2>
+          <nav class="roadmap__nav">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="29.5" transform="rotate(180 30 30)" stroke="white" />
+              <path
+                d="M23.5 30.866C22.8333 30.4811 22.8333 29.5189 23.5 29.134L32.5 23.9378C33.1667 23.5529 34 24.034 34 24.8038L34 35.1962C34 35.966 33.1667 36.4471 32.5 36.0622L23.5 30.866Z"
+                fill="white" />
+            </svg>
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="29.5" stroke="white" />
+              <path
+                d="M36.5 29.134C37.1667 29.5189 37.1667 30.4811 36.5 30.866L27.5 36.0622C26.8333 36.4471 26 35.966 26 35.1962L26 24.8038C26 24.034 26.8333 23.5529 27.5 23.9378L36.5 29.134Z"
+                fill="white" />
+            </svg>
+          </nav>
+        </div>
+        <div class="roadmap__timeline track">
+          <div class="roadmap__timeline__list">
+            <div class="roadmap__qt roadmap__qt--selected">
+              <img src="assets/icons/done.svg">
+              <h3><span>Q2/2021</span></h3>
+              <ul class="roadmap__highlights">
+                <li class="roadmap__highlight roadmap__highlight--done">MainNet Launch</li>
+                <li class="roadmap__highlight roadmap__highlight--done">Royalty Fee Mechanism</li>
+                <li class="roadmap__highlight roadmap__highlight--done">Artist Ambassador Program</li>
+                <li class="roadmap__highlight roadmap__highlight--done">Babylons Genesis NFT Series</li>
+                <li class="roadmap__highlight roadmap__highlight--done">Unlockable Content Feature</li>
+                <li class="roadmap__highlight">Partnerships with other Binance Smart Chain Projects</li>
+                <li class="roadmap__highlight">Bidding Feature</li>
+                <li class="roadmap__highlight">Highlighted Section for Curated Artworks</li>
+                <li class="roadmap__highlight">Artist/Collector Verification System</li>
+                <li class="roadmap__highlight">Weekly Rewards to Active Users</li>
+                <li class="roadmap__highlight">Audit</li>
+                <li class="roadmap__highlight">Dex Listing</li>
+                <li class="roadmap__highlight">Profit Sharing Mechanism</li>
+                <li class="roadmap__highlight">Enhanced Section for Music Market</li>
+                <li class="roadmap__highlight">Community Governance Activation by Voting</li>
+              </ul>
+            </div>
+            <div class="roadmap__qt">
+              <img src="assets/icons/not-done.svg">
+              <h3><span>Q3/2021</span></h3>
+              <ul class="roadmap__highlights">
+                <li class="roadmap__highlight">First Big Burn Event</li>
+                <li class="roadmap__highlight">NFT Crowdfunding</li>
+                <li class="roadmap__highlight">Babylons Analytics Page</li>
+                <li class="roadmap__highlight">More Types of File Support (3D, VR/AR, etc.)</li>
+                <li class="roadmap__highlight">Multi-Language Support</li>
+                <li class="roadmap__highlight">Launch of Babylons Artists’ Fund</li>
+                <li class="roadmap__highlight">Launch of Environmental Charity Fund to Fight Global Warming Crisis</li>
+                <li class="roadmap__highlight">NFT to NFT Swap Mechanism</li>
+                <li class="roadmap__highlight">Aggregator and API service for NFTs minted on BSC</li>
+              </ul>
+            </div>
+            <div class="roadmap__qt">
+              <img src="assets/icons/not-done.svg">
+              <h3><span>Q4/2021</span></h3>
+              <ul class="roadmap__highlights">
+                <li class="roadmap__highlight">Rebranding</li>
+                <li class="roadmap__highlight">Fractional Ownership</li>
+                <li class="roadmap__highlight">Cross-Chain Support</li>
+                <li class="roadmap__highlight">CEX listing</li>
+                <li class="roadmap__highlight">Virtual Reality NFT Gallery</li>
+                <li class="roadmap__highlight">AI-Backed Price Discovery Algorithm</li>
+                <li class="roadmap__highlight">Mobile App</li>
+                <li class="roadmap__highlight">Social Features</li>
+                <li class="roadmap__highlight">Shifting towards a Decentralized Autonomous Organization (DAO)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="roadmap__bg">Roadmap</div>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+      <section class="token" id="token">
+        <div class="token__text">
+          <h2 class="token__title">BABI <span>Governance</span> Token</h2>
+          <p class="token__description">$BABI is our governance token. It is a deflationary fungible digital asset. Anyone
+            can own the platform partially by utilizing $BABI and vote on system upgrades.</p>
+          <p class="token__description">More information about tokenomics, investment rounds and the infrastructure of $BABI
+            will be officially released in detail very soon on various mediums including Medium.</p>
+        </div>
+        <div class="token__img-container">
+          <img src="assets/images/token-bg.png" alt="token">
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="twelve columns">
+      <section class="team" id="team">
+        <h2 class="team__title">Our <span>Team</span></h2>
+        <div class="team__core">
+          <div class="team__cell">
+            <a href="https://www.linkedin.com/in/furkan-ozalp/">
+              <img src="assets/images/team/furkan.png" alt="Furkan Özalp CEO">
+              <h3>Furkan Özalp</p>
+                <p>CEO</p>
+            </a>
+          </div>
+          <div class="team__cell">
+            <a href="https://www.linkedin.com/in/aaseyhan/" target="_blank">
+              <img src="assets/images/team/arda.png" alt="Alp Arda Seyhan CSO">
+              <h3>Alp Arda Seyhan</p>
+                <p>CSO</p>
+            </a>
+          </div>
+          <div class="team__cell">
+            <a href="https://www.linkedin.com/in/ataberksevim/" target="_blank">
+              <img src="assets/images/team/ataberk.png" alt="Ataberk Sevim CTO">
+              <h3>Ataberk Sevim</p>
+                <p>CTO</p>
+            </a>
+          </div>
+        </div>
+        <div class="team__rest">
+          <div class="team__cell">
+            <a href="https://www.linkedin.com/in/mclittle/" target="_blank">
+              <img src="assets/images/team/ismail.png" alt="İsmail Küçük">
+              <h3>İsmail Küçük</p>
+                <p>Head of Blockchain</p>
+            </a>
+          </div>
+          <div class="team__cell">
+            <a href="https://www.linkedin.com/in/yunus-emre-%C3%A7and%C4%B1r/" target="_blank">
+              <img src="assets/images/team/yunus.png" alt="Yunus Emre Çandir">
+              <h3>Yunus Emre Çandir</p>
+                <p>System Architect</p>
+            </a>
+          </div>
+          <div class="team__cell">
+            <a href="https://www.linkedin.com/in/egemenhocaoglu/" target="_blank">
+              <img src="assets/images/team/egemen.png" alt="Egemen Hocaoğlu">
+              <h3>Egemen Hocaoğlu</p>
+                <p>Community Manager</p>
+            </a>
+          </div>
+          <div class="team__cell">
+            <a href="">
+              <img src="assets/images/team/mert.png" alt="Mert Uzbaşlı">
+              <h3>Mert Uzbaşlı</p>
+                <p>Lead Designer</p>
+            </a>
+          </div>
+        </div>
+        <h2 class="team__title">Honorable <span>Mentors</span></h2>
+        <div class="team__rest">
+          <div class="team__cell">
+            <a href="https://twitter.com/SantManukyan" target="_blank">
+              <img src="assets/images/team/sant.png" alt="Şant Manukyan">
+              <h3>Şant Manukyan</p>
+            </a>
+          </div>
+          <div class="team__cell">
+            <a href="https://twitter.com/ifriend05" target="_blank">
+              <img src="assets/images/team/ian.png" alt="Ian Friend">
+              <h3>Ian Friend</p>
+            </a>
+          </div>
+          <div class="team__cell">
+            <a href="https://twitter.com/stratrade_" target="_blank">
+              <img src="assets/images/team/stratrade.png" alt="Stratrade">
+              <h3>Stratrade</p>
+            </a>
+          </div>
+          <div class="team__cell team__cell--logo">
+            <a href="">
+              <img src="assets/images/team/hek.png" alt="Stratrade">
+              <h3>HEK Attorney Partnership</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="twelve columns">
+      <section class="faq" id="faq">
+        <h2 class="faq__title">FAQ</h2>
+        <div class="faq__q accordion">
+          <h3 class="faq__q__title accordion__action">
+            <p>What is Babylon’s?</p>
+            <div class="icon"></div>
+          </h3>
+          <p class="faq__q__content accordion__content">Babylon’s is the first community owned marketplace built on Binance
+            Smart Chain. Babylon’s NFT enables community to be a part of the marketplace.</p>
+        </div>
+        <div class="faq__q accordion">
+          <h3 class="faq__q__title accordion__action">
+            <p>Why BSC?</p>
+            <div class="icon"></div>
+          </h3>
+          <p class="faq__q__content accordion__content">Because of the high fees in ETH chain, creators can not unleash
+            their full potentials, also high gas fee restricts the market and give less to creators apart from they deserve.
+          </p>
+        </div>
+        <div class="faq__q accordion">
+          <h3 class="faq__q__title accordion__action">
+            <p>What is $BABI?</p>
+            <div class="icon"></div>
+          </h3>
+          <p class="faq__q__content accordion__content">Babi is the governance token of the Babylon’s. With $BABI community
+            can decide the future of the marketplace. Also $BABI holders will get rewards from the profit.</p>
+        </div>
+        <div class="faq__q accordion">
+          <h3 class="faq__q__title accordion__action">
+            <p>How can I get $BABI?</p>
+            <div class="icon"></div>
+          </h3>
+          <p class="faq__q__content accordion__content">Buyers and sellers will be rewarded with $BABI each week or you can
+            buy from BSC DEX.</p>
+        </div>
+        <div class="faq__q accordion">
+          <h3 class="faq__q__title accordion__action">
+            <p>What is minting?</p>
+            <div class="icon"></div>
+          </h3>
+          <p class="faq__q__content accordion__content">Minting refers to digitalizing your work using smart contracts.</p>
+        </div>
+        <div class="faq__q accordion">
+          <h3 class="faq__q__title accordion__action">
+            <p>What is “unlockable content”?</p>
+            <div class="icon"></div>
+          </h3>
+          <p class="faq__q__content accordion__content">Creators can add content to their NFT, that is only visible to
+            ownerships of the NFT. </p>
+        </div>
+        <div class="faq__q accordion">
+          <h3 class="faq__q__title accordion__action">
+            <p>How does the royalty system work?</p>
+            <div class="icon"></div>
+          </h3>
+          <p class="faq__q__content accordion__content">One of the things that makes NFT ecosystem valuable is the royalty
+            system. Creators can set a certain percentage as a royalty for secondary sales. For example: Creator set royalty
+            to %10 and buyer of the NFT sells it to different buyer to 10 BNB. Creator will get 1 BNB commission from the
+            secondary sale. With this feature creators will always get their share from the added value.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+      <footer class="footer">
+        <div class="footer__logo">
+          <img src="assets/images/babylons-logo-big.svg" width="150.5" height="86" alt="Babylons Logo">
+        </div>
+        <div class="footer__sitemap">
+          <h3 class="footer__sitemap__title">SITEMAP</h3>
+          <ul class="footer__sitemap__links">
+            <li><a href="Partners">Partners</a></li>
+            <li><a href="Why Babylons?">Why Babylons?</a></li>
+            <li><a href="What can you do on Babylons?">What can you do on Babylons?</a></li>
+            <li><a href="What is the difference?">What is the difference?</a></li>
+            <li><a href="Weekly Reward">Weekly Reward</a></li>
+            <li><a href="Weekly Profit Sharing">Weekly Profit Sharing</a></li>
+            <li><a href="Roadmap">Roadmap</a></li>
+            <li><a href="BABI Token">BABI Token</a></li>
+            <li><a href="Verified Artist">Verified Artist</a></li>
+            <li><a href="Team">Team</a></li>
+            <li><a href="FAQ">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__socials">
+          <h3 class="footer__socials__title">SOCIAL MEDIA</h3>
+          <ul class="footer__socials__links">
+            <li><a href=""><img src="assets/icons/socials/twitter.svg" alt="Babylons Twitter">Twitter</a></li>
+            <li><a href=""><img src="assets/icons/socials/discord.svg" alt="Babylons Discord">Discord</a></li>
+            <li><a href=""><img src="assets/icons/socials/telegram.svg" alt="Babylons Telegram">Telegram</a></li>
+            <li><a href=""><img src="assets/icons/socials/medium.svg" alt="Babylons Medium">Medium</a></li>
+            <li><a href=""><img src="assets/icons/socials/instagram.svg" alt="Babylons Instagram">Instagram</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+  
+  <section class="copyright">
+    Copyright © 2021 Babylons
+  </section>
+  <div class="modal-bg">
+    <div class="modal">
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uA4YTrBQtq0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
