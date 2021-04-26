@@ -133,6 +133,7 @@ section {
   }
   .nav .nav-links.active a {
     display: block;
+    padding-bottom: 0px!important
   }
 }
 .nav .mobile-bar {
