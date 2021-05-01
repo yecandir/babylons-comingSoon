@@ -1143,6 +1143,29 @@ section {
   height: 4.5rem;
 }
 
+.business-email {
+  width: 100%;
+  background-color: var(--color-text-dark);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: var(--color-text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+}
+
+:root {
+  --color-white: #FFF;
+  --color-primary: #FF8F4E;
+  --color-border: #2B2B2B;
+  --color-background: #333333;
+  --color-text-dark: #1E1E1E;
+  --color-text-light: #898A8B;
+  --color-grey-light: #E5E5E5;
+  --color-positive: #1DB70F;
+}
+
 .modal-bg {
   top: 0;
   left: 0;
