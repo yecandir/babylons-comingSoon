@@ -329,7 +329,7 @@ section {
   display: -webkit-flex;
   display: flex;
   
-  -webkit-flex-flow: row wrap;
+  --webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
 
@@ -346,6 +346,11 @@ section {
   justify-content: flex-start;
   transition: transform 0.4s;
 }
+
+.partners__list > li {
+  z-index: 100;
+}
+
 .partners__partner {
   padding: 0 1rem;
 }
